@@ -1,0 +1,24 @@
+{
+  "name": "wintergreen-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-resonant-llamas/wintergreen-ui.git"
+  },
+  "author": "The Resonant Llamas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-resonant-llamas/wintergreen-ui/issues"
+  },
+  "homepage": "https://github.com/the-resonant-llamas/wintergreen-ui#readme",
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  }
+}
