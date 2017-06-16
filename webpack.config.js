@@ -2,14 +2,13 @@
 
 const path = require('path');
 
-module.exports = {
-  context: path.join(__dirname, 'src'),
-  entry: [
-    './app.js',
-  ],
+const config = {
+  //context: path.join(__dirname, 'src'),
+  entry: './src/app.js',
   output: {
-    path: path.join(__dirname, 'build'),
-    filename: 'app.bundle.js'
+    path: path.resolve(__dirname, 'build'),
+    publicPath: '/build',
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -28,3 +27,5 @@ module.exports = {
     ],
   },
 };
+
+module.exports = config;

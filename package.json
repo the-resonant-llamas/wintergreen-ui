@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "webpack",
+    "webpack": "webpack",
+    "start": "webpack-dev-server --progress --inline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +24,8 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.4.5"
   }
 }
