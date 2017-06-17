@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import RootContainer from './containers/rootContainer.js';
 
-ReactDOM.render(<h1 className="title">Hello World</h1>, document.getElementById('container'));
+render(<RootContainer />, document.getElementById('container'));
