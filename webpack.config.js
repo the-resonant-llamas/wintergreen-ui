@@ -4,7 +4,7 @@ const path = require('path');
 
 const config = {
   //context: path.join(__dirname, 'src'),
-  entry: './src/app.js',
+  entry: './src/app/app.js',
   output: {
     path: path.resolve(__dirname, 'build'),
     publicPath: '/build',
@@ -21,6 +21,20 @@ const config = {
             presets: ['env', 'react'],
           },
         },
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ],
       },
     ],
   },
